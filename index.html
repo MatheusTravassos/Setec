@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Desenvolvimento de Sistemas com IA</title>
+    <title>Curso de Desenvolvimento de Sistemas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* ===== ESTILOS GERAIS ===== */
-        /* Reset de margens e preenchimentos para todos os elementos */
         * {
             margin: 0;
             padding: 0;
@@ -15,7 +14,6 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
-        /* Estilos do corpo da página */
         body {
             background-color: #f5f5f5;
             color: #333;
@@ -23,7 +21,6 @@
         }
         
         /* ===== CABEÇALHO ===== */
-        /* Estilização do cabeçalho com gradiente e sombra */
         header {
             background: linear-gradient(135deg, #2c3e50, #1a1a2e);
             color: white;
@@ -32,13 +29,11 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        /* Título principal */
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
         
-        /* Parágrafo do cabeçalho */
         header p {
             font-size: 1.2rem;
             max-width: 800px;
@@ -46,14 +41,12 @@
         }
         
         /* ===== SEÇÕES ===== */
-        /* Estilização geral das seções */
         section {
             padding: 3rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
         
-        /* Títulos das seções */
         .section-title {
             text-align: center;
             margin-bottom: 2rem;
@@ -62,7 +55,6 @@
             position: relative;
         }
         
-        /* Linha decorativa abaixo dos títulos */
         .section-title::after {
             content: '';
             display: block;
@@ -81,7 +73,6 @@
             margin: 2rem auto;
         }
         
-        /* Layout do conteúdo da seção */
         .curso-content {
             display: flex;
             flex-wrap: wrap;
@@ -89,35 +80,31 @@
             align-items: center;
         }
         
-        /* Texto sobre o curso */
         .curso-texto {
             flex: 1;
             min-width: 300px;
         }
         
-        /* Container da imagem */
         .curso-imagem {
             flex: 1;
             min-width: 300px;
             text-align: center;
         }
         
-        /* Estilo da imagem */
         .curso-imagem img {
             max-width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         
-        /* ===== SEGUNDA SEÇÃO - TÓPICOS DE IA ===== */
-        #ia-topicos {
+        /* ===== SEGUNDA SEÇÃO - TECNOLOGIAS ===== */
+        #tecnologias {
             background-color: #f8f9fa;
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             margin: 2rem auto;
         }
         
-        /* Container dos vídeos */
         .videos-container {
             display: flex;
             flex-wrap: wrap;
@@ -126,7 +113,6 @@
             margin-top: 2rem;
         }
         
-        /* Estilo de cada vídeo */
         .video-wrapper {
             flex: 1;
             min-width: 250px;
@@ -137,37 +123,31 @@
             transition: transform 0.3s ease;
         }
         
-        /* Efeito de hover nos vídeos */
         .video-wrapper:hover {
             transform: translateY(-5px);
         }
         
-        /* Iframe do vídeo */
         .video-wrapper iframe {
             width: 100%;
             height: 180px;
             border: none;
         }
         
-        /* Informações do vídeo */
         .video-info {
             padding: 15px;
             background: white;
         }
         
-        /* Título do vídeo */
         .video-info h3 {
             color: #2c3e50;
             margin-bottom: 8px;
         }
         
-        /* Descrição do vídeo */
         .video-info p {
             color: #666;
             font-size: 0.9rem;
         }
         
-        /* Quantidade de vídeos */
         .videos-qtd {
             display: inline-block;
             background: #3498db;
@@ -186,7 +166,6 @@
             margin: 2rem auto;
         }
         
-        /* Conteúdo da seção SETEC */
         .setec-content {
             display: flex;
             flex-direction: column;
@@ -194,7 +173,6 @@
             text-align: center;
         }
         
-        /* Logo da SETEC */
         .setec-logo {
             max-width: 200px;
             margin-bottom: 1.5rem;
@@ -209,17 +187,14 @@
             margin-top: 2rem;
         }
         
-        /* Parágrafos do rodapé */
         footer p {
             margin-bottom: 1rem;
         }
         
-        /* Ícones sociais */
         .social-icons {
             margin-top: 1rem;
         }
         
-        /* Links dos ícones sociais */
         .social-icons a {
             color: white;
             font-size: 1.5rem;
@@ -227,30 +202,25 @@
             transition: color 0.3s;
         }
         
-        /* Efeito hover nos ícones */
         .social-icons a:hover {
             color: #3498db;
         }
         
         /* ===== RESPONSIVIDADE ===== */
         @media (max-width: 768px) {
-            /* Layout em coluna para mobile */
             .curso-content {
                 flex-direction: column;
             }
             
-            /* Redução do tamanho da fonte */
             .section-title {
                 font-size: 1.8rem;
             }
             
-            /* Vídeos em coluna no mobile */
             .videos-container {
                 flex-direction: column;
                 align-items: center;
             }
             
-            /* Largura total para vídeos no mobile */
             .video-wrapper {
                 width: 100%;
             }
@@ -260,7 +230,7 @@
 <body>
     <!-- Cabeçalho da página -->
     <header>
-        <h1>Curso de Desenvolvimento de Sistemas com IA</h1>
+        <h1>Curso de Desenvolvimento de Sistemas</h1>
         <p>Preparando os profissionais do futuro para o mercado de tecnologia</p>
     </header>
     
@@ -269,58 +239,58 @@
         <h2 class="section-title">Sobre o Curso</h2>
         <div class="curso-content">
             <div class="curso-texto">
-                <p>O curso de Desenvolvimento de Sistemas com ênfase em Inteligência Artificial prepara os estudantes para atuarem no desenvolvimento de soluções tecnológicas inovadoras, combinando conhecimentos de programação, banco de dados e inteligência artificial.</p>
+                <p>O curso de Desenvolvimento de Sistemas prepara os estudantes para atuarem no desenvolvimento de soluções tecnológicas inovadoras, combinando conhecimentos de programação, banco de dados e desenvolvimento web.</p>
                 <p>Com uma abordagem prática e atualizada, o curso oferece aos alunos a oportunidade de trabalhar com as ferramentas e tecnologias mais recentes do mercado, preparando-os para os desafios da indústria 4.0.</p>
-                <p>Os profissionais formados neste curso estarão aptos a desenvolver sistemas inteligentes, implementar algoritmos de machine learning, criar soluções baseadas em dados e muito mais.</p>
+                <p>Os profissionais formados neste curso estarão aptos a desenvolver sistemas web e mobile, implementar bancos de dados, criar soluções baseadas em dados e muito mais.</p>
             </div>
             <div class="curso-imagem">
-                <img src="https://placehold.co/600x400/3498db/ffffff?text=DS+com+IA" alt="Imagem representando o curso de Desenvolvimento de Sistemas com IA">
+                <img src="https://placehold.co/600x400/3498db/ffffff?text=Desenvolvimento+de+Sistemas" alt="Imagem representando o curso de Desenvolvimento de Sistemas">
             </div>
         </div>
     </section>
     
-    <!-- Segunda seção: Tópicos de IA com vídeos -->
-    <section id="ia-topicos">
-        <h2 class="section-title">Inteligência Artificial no Curso de DS</h2>
+    <!-- Segunda seção: Tecnologias com vídeos -->
+    <section id="tecnologias">
+        <h2 class="section-title">Tecnologias no Curso de DS</h2>
         <div class="curso-texto">
-            <p>A Inteligência Artificial é uma das áreas mais promissoras da tecnologia atual, e o curso de Desenvolvimento de Sistemas prepara os alunos para dominar os conceitos e aplicações práticas de IA.</p>
+            <p>O curso de Desenvolvimento de Sistemas abrange diversas tecnologias essenciais para a formação de um desenvolvedor completo, desde front-end até back-end.</p>
             <p>Os estudantes aprendem desde os fundamentos até as técnicas mais avançadas, com foco na implementação de soluções reais para problemas do mundo real.</p>
         </div>
 
         <!-- Container com os 4 vídeos -->
         <div class="videos-container">
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/ukzFI9rgwfU" title="Introdução à Inteligência Artificial" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/6C6C4S4TSfk" title="Desenvolvimento Front-end" allowfullscreen></iframe>
                 <div class="video-info">
-                    <h3>Introdução à IA</h3>
-                    <p>Conceitos básicos de Inteligência Artificial e suas aplicações.</p>
-                    <span class="videos-qtd">5 vídeos</span>
-                </div>
-            </div>
-            
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/aircAruvnKk" title="Redes Neurais para Iniciantes" allowfullscreen></iframe>
-                <div class="video-info">
-                    <h3>Redes Neurais</h3>
-                    <p>Entenda como funcionam as redes neurais artificiais.</p>
+                    <h3>Front-end</h3>
+                    <p>HTML, CSS e JavaScript para criação de interfaces web.</p>
                     <span class="videos-qtd">8 vídeos</span>
                 </div>
             </div>
             
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/7sB052Pz0sQ" title="Machine Learning na Prática" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/6C6C4S4TSfk" title="Desenvolvimento Back-end" allowfullscreen></iframe>
                 <div class="video-info">
-                    <h3>Machine Learning</h3>
-                    <p>Aplicações práticas de Machine Learning.</p>
+                    <h3>Back-end</h3>
+                    <p>Lógica de programação, APIs e servidores.</p>
                     <span class="videos-qtd">10 vídeos</span>
                 </div>
             </div>
             
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/4jmsHaJ7xEA" title="Processamento de Linguagem Natural" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/6C6C4S4TSfk" title="Banco de Dados" allowfullscreen></iframe>
                 <div class="video-info">
-                    <h3>PLN</h3>
-                    <p>Processamento de Linguagem Natural e chatbots.</p>
+                    <h3>Banco de Dados</h3>
+                    <p>Modelagem e implementação de bancos de dados relacionais.</p>
+                    <span class="videos-qtd">7 vídeos</span>
+                </div>
+            </div>
+            
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/6C6C4S4TSfk" title="Desenvolvimento Mobile" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>Mobile</h3>
+                    <p>Desenvolvimento de aplicativos para dispositivos móveis.</p>
                     <span class="videos-qtd">6 vídeos</span>
                 </div>
             </div>
@@ -332,7 +302,7 @@
         <h2 class="section-title">Futuro Relacionado à SETEC</h2>
         <div class="setec-content">
             <img src="https://placehold.co/200x100/2c3e50/ffffff?text=SETEC" alt="Logo SETEC" class="setec-logo">
-            <p>A Secretaria de Educação Profissional e Tecnológica (SETEC) tem um papel fundamental na expansão e consolidação dos cursos de tecnologia no Brasil, incluindo o curso de Desenvolvimento de Sistemas com IA.</p>
+            <p>A Secretaria de Educação Profissional e Tecnológica (SETEC) tem um papel fundamental na expansão e consolidação dos cursos de tecnologia no Brasil, incluindo o curso de Desenvolvimento de Sistemas.</p>
             <p>No futuro, espera-se que a SETEC continue fomentando a integração entre educação e mercado de trabalho, atualizando constantemente as diretrizes curriculares para acompanhar as rápidas transformações tecnológicas.</p>
             <p>Além disso, a SETEC tem potencial para promover parcerias entre instituições de ensino e empresas do setor de tecnologia, criando oportunidades de estágio, projetos conjuntos e empregabilidade para os estudantes.</p>
         </div>
@@ -340,7 +310,7 @@
     
     <!-- Rodapé da página -->
     <footer>
-        <p>Curso de Desenvolvimento de Sistemas com IA</p>
+        <p>Curso de Desenvolvimento de Sistemas</p>
         <p>© 2023 - Todos os direitos reservados</p>
         <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
