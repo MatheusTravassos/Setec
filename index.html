@@ -4,14 +4,267 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Desenvolvimento de Sistemas com IA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ===== ESTILOS GERAIS ===== */
+        /* Reset de margens e preenchimentos para todos os elementos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Estilos do corpo da página */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* ===== CABEÇALHO ===== */
+        /* Estilização do cabeçalho com gradiente e sombra */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #1a1a2e);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Título principal */
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Parágrafo do cabeçalho */
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* ===== SEÇÕES ===== */
+        /* Estilização geral das seções */
+        section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Títulos das seções */
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            font-size: 2rem;
+            position: relative;
+        }
+        
+        /* Linha decorativa abaixo dos títulos */
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #3498db;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+        
+        /* ===== PRIMEIRA SEÇÃO - SOBRE O CURSO ===== */
+        #sobre {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+        }
+        
+        /* Layout do conteúdo da seção */
+        .curso-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        /* Texto sobre o curso */
+        .curso-texto {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        /* Container da imagem */
+        .curso-imagem {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        /* Estilo da imagem */
+        .curso-imagem img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* ===== SEGUNDA SEÇÃO - TÓPICOS DE IA ===== */
+        #ia-topicos {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+        }
+        
+        /* Container dos vídeos */
+        .videos-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        /* Estilo de cada vídeo */
+        .video-wrapper {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Efeito de hover nos vídeos */
+        .video-wrapper:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Iframe do vídeo */
+        .video-wrapper iframe {
+            width: 100%;
+            height: 180px;
+            border: none;
+        }
+        
+        /* Informações do vídeo */
+        .video-info {
+            padding: 15px;
+            background: white;
+        }
+        
+        /* Título do vídeo */
+        .video-info h3 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        /* Descrição do vídeo */
+        .video-info p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Quantidade de vídeos */
+        .videos-qtd {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        /* ===== TERCEIRA SEÇÃO - SETEC ===== */
+        #futuro-setec {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+        }
+        
+        /* Conteúdo da seção SETEC */
+        .setec-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        /* Logo da SETEC */
+        .setec-logo {
+            max-width: 200px;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* ===== RODAPÉ ===== */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Parágrafos do rodapé */
+        footer p {
+            margin-bottom: 1rem;
+        }
+        
+        /* Ícones sociais */
+        .social-icons {
+            margin-top: 1rem;
+        }
+        
+        /* Links dos ícones sociais */
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        /* Efeito hover nos ícones */
+        .social-icons a:hover {
+            color: #3498db;
+        }
+        
+        /* ===== RESPONSIVIDADE ===== */
+        @media (max-width: 768px) {
+            /* Layout em coluna para mobile */
+            .curso-content {
+                flex-direction: column;
+            }
+            
+            /* Redução do tamanho da fonte */
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            /* Vídeos em coluna no mobile */
+            .videos-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            /* Largura total para vídeos no mobile */
+            .video-wrapper {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Cabeçalho da página -->
     <header>
         <h1>Curso de Desenvolvimento de Sistemas com IA</h1>
         <p>Preparando os profissionais do futuro para o mercado de tecnologia</p>
     </header>
     
+    <!-- Primeira seção: Sobre o curso -->
     <section id="sobre">
         <h2 class="section-title">Sobre o Curso</h2>
         <div class="curso-content">
@@ -26,6 +279,7 @@
         </div>
     </section>
     
+    <!-- Segunda seção: Tópicos de IA com vídeos -->
     <section id="ia-topicos">
         <h2 class="section-title">Inteligência Artificial no Curso de DS</h2>
         <div class="curso-texto">
@@ -33,6 +287,7 @@
             <p>Os estudantes aprendem desde os fundamentos até as técnicas mais avançadas, com foco na implementação de soluções reais para problemas do mundo real.</p>
         </div>
 
+        <!-- Container com os 4 vídeos -->
         <div class="videos-container">
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/ukzFI9rgwfU" title="Introdução à Inteligência Artificial" allowfullscreen></iframe>
@@ -72,6 +327,7 @@
         </div>
     </section>
     
+    <!-- Terceira seção: Futuro relacionado à SETEC -->
     <section id="futuro-setec">
         <h2 class="section-title">Futuro Relacionado à SETEC</h2>
         <div class="setec-content">
@@ -82,9 +338,16 @@
         </div>
     </section>
     
+    <!-- Rodapé da página -->
     <footer>
         <p>Curso de Desenvolvimento de Sistemas com IA</p>
         <p>© 2023 - Todos os direitos reservados</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 </body>
 </html>
